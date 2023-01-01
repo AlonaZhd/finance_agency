@@ -1,0 +1,54 @@
+/* ------- Animation -------*/
+
+@keyframes jump {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    }
+    100% {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+    }
+}
+
+@keyframes big {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@keyframes up {
+    0% { 
+      transform: translateY(3px)
+    }
+    50% { 
+      transform: translateY(-7px)
+    }
+     100% { 
+      transform: translateY(3px)
+    }
+}
+
+@keyframes start-left-invite {
+    from {right: -50vw; top: 27%;}
+    to {right: 0; top: 27%;}
+}
+
+@keyframes start-right-invite {
+  from {left: -50vw; top: 0;}
+  to {left: 0; top: 0;}
+}
+
+@keyframes start-right-footer {
+    from {left: -50vw; top: 32%;}
+    to {left: 0; top: 32%;}
+}
