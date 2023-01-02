@@ -793,13 +793,13 @@
 /* Стрелка влево */
 .opinion-wrapp .slick-arrow.slick-prev {
     right: 8.9rem;
-    background: url(/img/arrow-prev.svg) center / 20%  no-repeat;
+    background: url(/finance_agency/img/arrow-prev.svg) center / 20%  no-repeat;
 }
 
 /* Стрелка вправо */
 .opinion-wrapp .slick-arrow.slick-next {
     right: 0;
-    background: url(/img/arrow-next.svg) center / 20% no-repeat;
+    background: url(/finance_agency/img/arrow-next.svg) center / 20% no-repeat;
 }
 
 .slick-arrow.slick-prev:hover,
@@ -925,7 +925,6 @@
 }
 
 .social:hover {
-    animation: 1s big ease infinite alternate;
     box-shadow: 5px 10px 20px rgba(132, 184, 152, 0.46);
 }
 
