@@ -74,9 +74,9 @@
 }
 .menu-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 8rem;
 }
 
 .text-menu {
