@@ -38,17 +38,41 @@
     }
 }
 
-@keyframes start-left-invite {
-    from {right: -50vw; top: 27%;}
-    to {right: 0; top: 27%;}
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes start-right-invite {
-  from {left: -50vw; top: 0;}
-  to {left: 0; top: 0;}
+@keyframes appearance-left {
+    from {
+      right: -100px; 
+      opacity: 0;
+    }
+    to {
+      right: 0; 
+    }
 }
 
-@keyframes start-right-footer {
-    from {left: -50vw; top: 32%;}
-    to {left: 0; top: 32%;}
+@keyframes appearance-right {
+  from {
+    left: -100px; 
+    opacity: 0;
+  }
+  to {
+    left: 0; 
+  }
+}
+
+@keyframes appearance-down {
+  from {
+    bottom: -60px; 
+    opacity: 0;
+  }
+  to {
+    bottom: 0; 
+  }
 }

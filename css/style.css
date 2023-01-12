@@ -74,9 +74,9 @@
 }
 .menu-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .text-menu {
@@ -86,7 +86,6 @@
 
 .text-menu:hover {
     color: var(--darkgreen);
-    transition: all 0.5s ease 0s;
 }
 
 .btn-header {
@@ -128,7 +127,7 @@
     width: 206px;
     right: 1rem;
     top: 27%;
-    animation: start-left-invite 6s 1;
+    animation: appearance-left 6s 1;
 }
 
 .invite-title {
@@ -136,6 +135,8 @@
     text-align: center;
     display: block;
     margin: 0 auto;
+    position: relative;
+    animation: appearance-down 3s 1;
 }
 
 .invite-title .text {
@@ -152,7 +153,7 @@
 
 .invite-picture {
     position: relative;
-    animation: start-right-invite 6s 1;
+    animation: appearance-right 6s 1;
 }
 
 .invite-picture__bkg_down {
@@ -217,6 +218,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: appearance 3s 1;
 }
 
 .article-title {
@@ -241,12 +243,12 @@
     padding: 1.9rem 2.2rem;
     background-color: var(--nero);
     animation: 1s jump ease infinite alternate;
+    transition: all 0.6s ease 0s;    
 }
 
 .btn-article:hover {
     background-color: var(--darkgreen);
     box-shadow: 5px 10px 20px rgba(30, 31, 30, 0.46);
-    transition: all 1s ease 0s;
 }
 
 .btn-light {
@@ -254,12 +256,12 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    transition: all 0.6s ease 0s;
 }
 
 .btn-light:hover {
     background-color: var(--darkgreen);
     box-shadow: 5px 10px 20px rgba(132, 184, 152, 0.46);
-    transition: all 1s ease 0s;
     animation: 1s jump ease infinite alternate;
 }
 
@@ -269,7 +271,6 @@
 
 .btn-light:hover .btn-active {
     color: var(--white);
-    transition: all 1s ease 0s;
 }
 
 .btn-light:hover .btn-svg{
@@ -310,6 +311,7 @@
     padding: 3rem;
     margin: -3rem;
     transition: all 2s 0s;
+    animation: appearance 3s 1;
 }
 
 .progress-column-last{
@@ -341,18 +343,17 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 2rem;
+    transition: all 1s ease 0s;
 }
 
 .progress-column:hover, .progress-column-last:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    transition: all 1s ease 0s;
 }
 
 .progress-column:hover .progress-text,
 .progress-column-last:hover .progress-text-top {
     color: var(--darkgreen);
     letter-spacing: 0.1em;
-    transition: all 1s ease 0s;
 }
 
 /* ======= benefits ======= */
@@ -367,6 +368,7 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 1rem;
+    animation: appearance 3s 1;
 }
 
 .benefits-img-bkg {
@@ -387,6 +389,8 @@
 .benefits-wrapp {
     width: 38.3%;
     margin-right: 13.2rem;
+    position: relative;
+    animation: appearance-left 3s 1;
 }
 
 .benefits-wrapp>.text {
@@ -430,6 +434,8 @@
 
 .article-wrapp {
     width: 55%;
+    position: relative;
+    animation: appearance-right 6s 1;
 }
 
 .article-wrapp .text {
@@ -441,6 +447,7 @@
 .article-picture{
     width: 50%;
     position: relative;
+    animation: appearance 3s 1;
 }
 
 .grafic-wrapp {
@@ -524,6 +531,7 @@
     'action-title action-title'
     'experts action-block_bottom';
     grid-template-columns: 64% 36%;
+    animation: appearance 3s 1;
 }
 
 .action-block_top {
@@ -580,6 +588,8 @@
     text-align: center;
     padding: 4.5rem 0;
     margin: 0 auto;
+    position: relative;
+    animation: appearance-down 3s 1;
 }
 
 .experts {
@@ -671,6 +681,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    animation: appearance-down 3s 1;
 }
 
 .opinion-title .accent-text {
@@ -685,6 +696,7 @@
     align-items: flex-end;
     gap: 3.5rem;   
     position: relative;
+    animation: appearance 3s 1;
 }
 
 .opinion-row {
@@ -744,11 +756,7 @@
 
 /* ======= Слайдер ======= */
 
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
+
 /* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
@@ -759,12 +767,7 @@
     gap: 3.5rem; 
     align-items: stretch;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
 
-}
 /* Слайд основной */
 .slick-slide.slick-current {
     background: var(--coolmint);
@@ -775,10 +778,7 @@
 .slick-slide.slick-current .accent-bkg {
     color: var(--celadon);
 }
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
+
 /* Стрелка */
 .opinion-wrapp .slick-arrow {
     position: absolute;
@@ -807,17 +807,6 @@
     background-color: var(--darkgreen);
     box-shadow: 0px 10px 20px rgba(132, 184, 152, 0.55);
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-
-
 
 
 /* ======= footer ======= */
@@ -831,7 +820,7 @@
     position: absolute;
     top: 32%;
     left: 0;
-    animation: start-right-footer 6s 1;
+    animation: appearance-right 6s 1;
 }
 
 .footer-img {
@@ -875,6 +864,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: appearance 3s 1;
 }
 
 .subscribe>.text {
@@ -888,11 +878,11 @@
     background-color: var(--nero);
     padding: 1rem;
     margin: 0 auto;
+    transition: all 1s ease 0s;
 }
 
 .subscribe-form:hover {
     box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.15);
-    transition: all 1s ease 0s;
 }
 
 .form-control {
@@ -911,6 +901,7 @@
     display: flex;
     gap: 2.7rem;
     margin: 3.5rem 0;
+    animation: appearance 3s 1;
 }
 
 .social {
@@ -929,5 +920,5 @@
 }
 
 .menu-footer {
-    width: 70%;
+    width: 40%;
 }
