@@ -218,7 +218,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .article-title {
@@ -311,7 +311,7 @@
     padding: 3rem;
     margin: -3rem;
     transition: all 2s 0s;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .progress-column-last{
@@ -368,7 +368,7 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 1rem;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .benefits-img-bkg {
@@ -390,7 +390,7 @@
     width: 38.3%;
     margin-right: 13.2rem;
     position: relative;
-    animation: appearance-left 3s 1;
+    animation: appearance-left 6s 1;
 }
 
 .benefits-wrapp>.text {
@@ -447,7 +447,7 @@
 .article-picture{
     width: 50%;
     position: relative;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .grafic-wrapp {
@@ -531,7 +531,7 @@
     'action-title action-title'
     'experts action-block_bottom';
     grid-template-columns: 64% 36%;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .action-block_top {
@@ -696,7 +696,7 @@
     align-items: flex-end;
     gap: 3.5rem;   
     position: relative;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .opinion-row {
@@ -864,7 +864,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .subscribe>.text {
@@ -901,7 +901,7 @@
     display: flex;
     gap: 2.7rem;
     margin: 3.5rem 0;
-    animation: appearance 3s 1;
+    animation: appearance 5s 1;
 }
 
 .social {
