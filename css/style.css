@@ -127,7 +127,6 @@
     width: 206px;
     right: 1rem;
     top: 27%;
-    animation: appearance-left 6s 1;
 }
 
 .invite-title {
@@ -135,8 +134,6 @@
     text-align: center;
     display: block;
     margin: 0 auto;
-    position: relative;
-    animation: appearance-down 3s 1;
 }
 
 .invite-title .text {
@@ -153,7 +150,6 @@
 
 .invite-picture {
     position: relative;
-    animation: appearance-right 6s 1;
 }
 
 .invite-picture__bkg_down {
@@ -218,7 +214,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    animation: appearance 5s 1;
 }
 
 .article-title {
@@ -311,7 +306,6 @@
     padding: 3rem;
     margin: -3rem;
     transition: all 2s 0s;
-    animation: appearance 5s 1;
 }
 
 .progress-column-last{
@@ -368,7 +362,6 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 1rem;
-    animation: appearance 5s 1;
 }
 
 .benefits-img-bkg {
@@ -389,8 +382,6 @@
 .benefits-wrapp {
     width: 38.3%;
     margin-right: 13.2rem;
-    position: relative;
-    animation: appearance-left 6s 1;
 }
 
 .benefits-wrapp>.text {
@@ -434,8 +425,6 @@
 
 .article-wrapp {
     width: 55%;
-    position: relative;
-    animation: appearance-right 6s 1;
 }
 
 .article-wrapp .text {
@@ -447,7 +436,6 @@
 .article-picture{
     width: 50%;
     position: relative;
-    animation: appearance 5s 1;
 }
 
 .grafic-wrapp {
@@ -531,7 +519,6 @@
     'action-title action-title'
     'experts action-block_bottom';
     grid-template-columns: 64% 36%;
-    animation: appearance 5s 1;
 }
 
 .action-block_top {
@@ -588,8 +575,6 @@
     text-align: center;
     padding: 4.5rem 0;
     margin: 0 auto;
-    position: relative;
-    animation: appearance-down 3s 1;
 }
 
 .experts {
@@ -681,7 +666,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    animation: appearance-down 3s 1;
 }
 
 .opinion-title .accent-text {
@@ -695,8 +679,6 @@
     flex-direction: row;
     align-items: flex-end;
     gap: 3.5rem;   
-    position: relative;
-    animation: appearance 5s 1;
 }
 
 .opinion-row {
@@ -820,7 +802,6 @@
     position: absolute;
     top: 32%;
     left: 0;
-    animation: appearance-right 6s 1;
 }
 
 .footer-img {
@@ -864,7 +845,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: appearance 5s 1;
 }
 
 .subscribe>.text {
@@ -901,7 +881,6 @@
     display: flex;
     gap: 2.7rem;
     margin: 3.5rem 0;
-    animation: appearance 5s 1;
 }
 
 .social {

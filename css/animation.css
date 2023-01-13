@@ -38,41 +38,47 @@
     }
 }
 
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+._appearance {
+  opacity: 0;
+  transition: all 3s ease 0.4s;
 }
 
-@keyframes appearance-left {
-    from {
-      right: -100px; 
-      opacity: 0;
-    }
-    to {
-      right: 0; 
-    }
+._appearance._motion {
+  opacity: 1;    
 }
 
-@keyframes appearance-right {
-  from {
-    left: -100px; 
-    opacity: 0;
-  }
-  to {
-    left: 0; 
-  }
+._motion_right {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 3s ease 0.6s;
 }
 
-@keyframes appearance-down {
-  from {
-    bottom: -60px; 
-    opacity: 0;
-  }
-  to {
-    bottom: 0; 
-  }
+._motion_left {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 3s ease 0.6s;
+}
+
+._motion_right._motion,
+._motion_left._motion {
+  transform: translateX(0);
+  opacity: 1;    
+}
+
+._motion_down-title {
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 3s ease 0s;
+}
+
+._motion_down-text {
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 3s ease 0.3s;
+}
+
+._motion_down-title._motion,
+._motion_down-text._motion {
+  opacity: 1;
+  transform: translateY(0);   
 }
